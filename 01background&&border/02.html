@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>多重边框</title>
+    <style>
+        .container{
+            margin: 20px;
+            width: 200px;
+            height: 200px;
+            background: yellowgreen;
+            box-shadow: 0 0 0 10px #655, 0 0 0 15px deeppink, 0 2px 5px 15px rgba(0,0,0,.6);
+        }
+        .container1{
+            margin: 50px;
+            width: 200px;
+            height: 200px;
+            background: yellowgreen;
+            border: 10px solid #655;
+            outline: 5px solid deeppink;
+        }
+        .container2{
+            margin: 50px;
+            width: 200px;
+            height: 200px;
+            background: #000;
+            outline: 1px dashed #fff;
+            outline-offset: -5px;
+        }
+    </style>
+</head>
+<body>
+     <div class="container"></div>
+<div class="container1"></div>
+<div class="container2"></div>
+</body>
+</html>

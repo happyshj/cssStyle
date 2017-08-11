@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>半透明边框</title>
+    <style>
+        body{
+            background: #aaaaaa;
+        }
+        .container{
+            width: 200px;
+            height: 200px;
+            border: 10px solid hsla(0, 0%, 100%, .5);
+            background: #ffffff;
+            background-clip: padding-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="container"></div>
+</body>
+</html>
