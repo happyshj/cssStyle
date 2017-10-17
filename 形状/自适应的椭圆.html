@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>自适应的椭圆</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        section{
+            margin: 20px 20px;
+            text-align: center;
+        }
+        .ellipse{
+            background-color: #ffbb33;
+            margin: auto;
+            width: 200px;
+            height: 100px;
+        }
+        .responsive{
+            border-radius: 50%;
+        }
+        .top{
+            border-radius: 50% / 100% 100% 0 0;
+        }
+        .bottom{
+            border-radius: 50% / 0 0 100% 100%;
+        }
+        .left{
+            border-radius: 100% 0 0 100% / 50%;
+        }
+        .right{
+            border-radius: 0 100% 100% 0 / 50%;
+        }
+        .left-top{
+            border-radius: 100% 0 0 0;
+        }
+        .left-bottom{
+            border-radius: 0 0 0 100%;
+        }
+        .right-top{
+            border-radius: 0 100% 0 0;
+        }
+        .right-bottom{
+            border-radius: 0 0 100% 0;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h3>自适应椭圆</h3>
+        <div class="ellipse responsive"></div>
+    </section>
+    <section>
+        <h3>上半椭圆</h3>
+        <div class="ellipse top"></div>
+    </section>
+    <section>
+        <h3>下半椭圆</h3>
+        <div class="ellipse bottom"></div>
+    </section>
+    <section>
+        <h3>左半椭圆</h3>
+        <div class="ellipse left"></div>
+    </section>
+    <section>
+        <h3>右半椭圆</h3>
+        <div class="ellipse right"></div>
+    </section>
+    <section>
+        <h3>四分之一椭圆----左上</h3>
+        <div class="ellipse left-top"></div>
+    </section>
+    <section>
+        <h3>四分之一椭圆---右上</h3>
+        <div class="ellipse right-top"></div>
+    </section>
+    <section>
+        <h3>四分之一椭圆---左下</h3>
+        <div class="ellipse left-bottom"></div>
+    </section>
+    <section>
+        <h3>四分之一椭圆---右下</h3>
+        <div class="ellipse right-bottom"></div>
+    </section>
+
+</body>
+</html>
