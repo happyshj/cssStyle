@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>平行四边形</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .button{
+            display: block;
+            width: 200px;
+            height: 100px;
+            margin: 50px;
+        }
+        .a{
+            background-color: #ffbb33;
+            transform: skewX(-45deg);
+        }
+        .a > div{
+            transform: skewX(45deg);
+        }
+        .b{
+            position: relative;
+        }
+        .b::before{
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: -1;
+            background-color: #ffbb33;
+            transform: skewX(45deg);
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h3>添加元素设置平行四边形</h3>
+        <a href="#" class="button a">
+            <div>Click me</div>
+        </a>
+    </section>
+    <section>
+        <h3>使用伪类设置平行四边形</h3>
+        <a href="#" class="button b">
+            Click me
+        </a>
+    </section>
+</body>
+</html>
